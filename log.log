@@ -1,0 +1,1080 @@
+2020-02-18 15:05:15.749  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-18 15:05:15.751  INFO 19656 --- [           main] kafka.server.KafkaServer                 : [KafkaServer id=0] started
+2020-02-18 15:05:15.752  INFO 19656 --- [er-event-thread] kafka.controller.ReplicaStateMachine     : [ReplicaStateMachine controllerId=0] Started replica state machine with initial state -> Map()
+2020-02-18 15:05:15.752  INFO 19656 --- [er-event-thread] kafka.controller.PartitionStateMachine   : [PartitionStateMachine controllerId=0] Initializing partition state
+2020-02-18 15:05:15.752  INFO 19656 --- [r-0-send-thread] kafka.controller.RequestSendThread       : [RequestSendThread controllerId=0] Controller 0 connected to localhost:55769 (id: 0 rack: null) for sending state change requests
+2020-02-18 15:05:15.754  INFO 19656 --- [er-event-thread] kafka.controller.PartitionStateMachine   : [PartitionStateMachine controllerId=0] Triggering online partition state changes
+2020-02-18 15:05:15.757  INFO 19656 --- [           main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [127.0.0.1:55769]
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2020-02-18 15:05:15.758  INFO 19656 --- [er-event-thread] kafka.controller.PartitionStateMachine   : [PartitionStateMachine controllerId=0] Started partition state machine with initial state -> Map()
+2020-02-18 15:05:15.758  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Ready to serve as the new controller with epoch 1
+2020-02-18 15:05:15.760  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Removing partitions Set() from the list of reassigned partitions in zookeeper
+2020-02-18 15:05:15.761  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] No more partitions need to be reassigned. Deleting zk path /admin/reassign_partitions
+2020-02-18 15:05:15.764  INFO 19656 --- [0 cport:55760):] o.a.z.server.PrepRequestProcessor        : Got user-level KeeperException when processing sessionid:0x1001919b2fc0001 type:delete cxid:0x37 zxid:0x1e txntype:-1 reqpath:n/a Error Path:/admin/reassign_partitions Error:KeeperErrorCode = NoNode for /admin/reassign_partitions
+2020-02-18 15:05:15.770  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Partitions undergoing preferred replica election: 
+2020-02-18 15:05:15.771  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Partitions that completed preferred replica election: 
+2020-02-18 15:05:15.771  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Skipping preferred replica election for partitions due to topic deletion: 
+2020-02-18 15:05:15.771  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Resuming preferred replica election for partitions: 
+2020-02-18 15:05:15.772  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Starting preferred replica leader election for partitions 
+2020-02-18 15:05:15.774  INFO 19656 --- [0 cport:55760):] o.a.z.server.PrepRequestProcessor        : Got user-level KeeperException when processing sessionid:0x1001919b2fc0001 type:delete cxid:0x39 zxid:0x1f txntype:-1 reqpath:n/a Error Path:/admin/preferred_replica_election Error:KeeperErrorCode = NoNode for /admin/preferred_replica_election
+2020-02-18 15:05:15.777  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] Starting the controller scheduler
+2020-02-18 15:05:15.777  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-18 15:05:15.778  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-18 15:05:15.808  INFO 19656 --- [0 cport:55760):] o.a.z.server.PrepRequestProcessor        : Got user-level KeeperException when processing sessionid:0x1001919b2fc0001 type:setData cxid:0x3f zxid:0x20 txntype:-1 reqpath:n/a Error Path:/config/topics/tp-in-gco-mao-notasfiscais Error:KeeperErrorCode = NoNode for /config/topics/tp-in-gco-mao-notasfiscais
+2020-02-18 15:05:15.813  INFO 19656 --- [quest-handler-4] kafka.zk.AdminZkClient                   : Topic creation Map(tp-in-gco-mao-notasfiscais-0 -> ArrayBuffer(0))
+2020-02-18 15:05:15.823  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] New topics: [Set(tp-in-gco-mao-notasfiscais)], deleted topics: [Set()], new partition replica assignment [Map(tp-in-gco-mao-notasfiscais-0 -> Vector(0))]
+2020-02-18 15:05:15.824  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] New partition creation callback for tp-in-gco-mao-notasfiscais-0
+2020-02-18 15:05:15.900  INFO 19656 --- [quest-handler-5] kafka.server.ReplicaFetcherManager       : [ReplicaFetcherManager on broker 0] Removed fetcher for partitions tp-in-gco-mao-notasfiscais-0
+2020-02-18 15:05:15.953  INFO 19656 --- [quest-handler-5] kafka.log.Log                            : [Log partition=tp-in-gco-mao-notasfiscais-0, dir=C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725] Loading producer state till offset 0 with message format version 2
+2020-02-18 15:05:15.961  INFO 19656 --- [quest-handler-5] kafka.log.Log                            : [Log partition=tp-in-gco-mao-notasfiscais-0, dir=C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 34 ms
+2020-02-18 15:05:15.963  INFO 19656 --- [quest-handler-5] kafka.log.LogManager                     : Created log for partition tp-in-gco-mao-notasfiscais-0 in C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725 with properties {compression.type -> producer, message.format.version -> 2.0-IV1, file.delete.delay.ms -> 1000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, message.downconversion.enable -> true, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}.
+2020-02-18 15:05:15.964  INFO 19656 --- [quest-handler-5] kafka.cluster.Partition                  : [Partition tp-in-gco-mao-notasfiscais-0 broker=0] No checkpointed highwatermark is found for partition tp-in-gco-mao-notasfiscais-0
+2020-02-18 15:05:15.968  INFO 19656 --- [quest-handler-5] kafka.cluster.Replica                    : Replica loaded for partition tp-in-gco-mao-notasfiscais-0 with initial high watermark 0
+2020-02-18 15:05:15.970  INFO 19656 --- [quest-handler-5] kafka.cluster.Partition                  : [Partition tp-in-gco-mao-notasfiscais-0 broker=0] tp-in-gco-mao-notasfiscais-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1
+2020-02-18 15:05:15.991  INFO 19656 --- [quest-handler-5] kafka.server.ReplicaAlterLogDirsManager  : [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List()
+2020-02-18 15:05:16.026  INFO 19656 --- [           main] br.com.riachuelo.InvoicingServiceTest    : Starting InvoicingServiceTest on ARKNDTI71700 with PID 19656 (started by 4002111 in C:\Users\4002111\kafka_projects\gco-mao-nf-emissao-csm-microservice)
+2020-02-18 15:05:16.026  INFO 19656 --- [           main] br.com.riachuelo.InvoicingServiceTest    : No active profile set, falling back to default profiles: default
+2020-02-18 15:05:17.022  INFO 19656 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-18 15:05:17.135  INFO 19656 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103ms. Found 1 repository interfaces.
+2020-02-18 15:05:17.609  INFO 19656 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$1de9919e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-18 15:05:17.743  INFO 19656 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$eecf451a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-18 15:05:17.787  INFO 19656 --- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-02-18 15:05:17.825  INFO 19656 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a37801b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-18 15:05:18.062  INFO 19656 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-18 15:05:18.285  INFO 19656 --- [           main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2020-02-18 15:05:18.287  INFO 19656 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-18 15:05:18.372  INFO 19656 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-02-18 15:05:18.481  INFO 19656 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2020-02-18 15:05:18.483  INFO 19656 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-02-18 15:05:18.761  INFO 19656 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-02-18 15:05:18.925  INFO 19656 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2020-02-18 15:05:19.765  INFO 19656 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-18 15:05:19.969  INFO 19656 --- [           main] o.s.ws.soap.saaj.SaajSoapMessageFactory  : Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2020-02-18 15:05:20.138 DEBUG 19656 --- [           main] KafkaListenerAnnotationBeanPostProcessor : 4 @KafkaListener methods processed on bean 'NFKafkaListener': {public void br.com.riachuelo.events.NFKafkaListener.listen1(br.com.riachuelo.ws.ZfifNfMao)=[@org.springframework.kafka.annotation.KafkaListener(topicPattern=, containerFactory=, beanRef=__listener, topics=[tp-in-gco-mao-notasfiscais], groupId=, topicPartitions=[], clientIdPrefix=, concurrency=, autoStartup=, idIsGroup=true, containerGroup=, errorHandler=, id=so60172304.1, properties=[])], public void br.com.riachuelo.events.NFKafkaListener.successTopic(br.com.riachuelo.ws.ZfifNfMao)=[@org.springframework.kafka.annotation.KafkaListener(topicPattern=, containerFactory=, beanRef=__listener, topics=[tp-out-gco-mao-notasfiscais], groupId=, topicPartitions=[], clientIdPrefix=, concurrency=, autoStartup=, idIsGroup=true, containerGroup=, errorHandler=, id=, properties=[])], public void br.com.riachuelo.events.NFKafkaListener.retryTopic(br.com.riachuelo.ws.ZfifNfMao)=[@org.springframework.kafka.annotation.KafkaListener(topicPattern=, containerFactory=retryKafkaListenerContainerFactory, beanRef=__listener, topics=[tp-ret-gco-mao-notasfiscais], groupId=, topicPartitions=[], clientIdPrefix=, concurrency=, autoStartup=, idIsGroup=true, containerGroup=, errorHandler=, id=, properties=[])], public void br.com.riachuelo.events.NFKafkaListener.errorTopic(br.com.riachuelo.ws.ZfifNfMao)=[@org.springframework.kafka.annotation.KafkaListener(topicPattern=, containerFactory=retryKafkaListenerContainerFactory, beanRef=__listener, topics=[tp-err-gco-mao-notasfiscais], groupId=, topicPartitions=[], clientIdPrefix=, concurrency=, autoStartup=, idIsGroup=true, containerGroup=, errorHandler=, id=, properties=[])]}
+2020-02-18 15:05:20.141  INFO 19656 --- [           main] o.s.ws.soap.saaj.SaajSoapMessageFactory  : Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2020-02-18 15:05:21.592  INFO 19656 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-02-18 15:05:21.803  INFO 19656 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-18 15:05:21.874  WARN 19656 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-18 15:05:22.070  WARN 19656 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-02-18 15:05:23.288  INFO 19656 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2020-02-18 15:05:23.418  INFO 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [RVMTDV1147.riachuelo.net:9092, RVMTDV1148.riachuelo.net:9092, RVMTDV1154.riachuelo.net:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orders3
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class br.com.riachuelo.events.InvoiceDeserializer
+
+2020-02-18 15:05:23.452  WARN 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'spring.json.trusted.packages' was supplied but isn't a known config.
+2020-02-18 15:05:23.452  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-18 15:05:23.452  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-18 15:05:23.562  INFO 19656 --- [           main] org.apache.kafka.clients.Metadata        : Cluster ID: MzLMDiApTTq2lu_5789ovQ
+2020-02-18 15:05:23.573  INFO 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [RVMTDV1147.riachuelo.net:9092, RVMTDV1148.riachuelo.net:9092, RVMTDV1154.riachuelo.net:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orders3
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class br.com.riachuelo.events.InvoiceDeserializer
+
+2020-02-18 15:05:23.576  WARN 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'spring.json.trusted.packages' was supplied but isn't a known config.
+2020-02-18 15:05:23.576  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-18 15:05:23.576  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-18 15:05:23.579  INFO 19656 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-02-18 15:05:23.584  INFO 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [RVMTDV1147.riachuelo.net:9092, RVMTDV1148.riachuelo.net:9092, RVMTDV1154.riachuelo.net:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = so60172304.1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class br.com.riachuelo.events.InvoiceDeserializer
+
+2020-02-18 15:05:23.589  WARN 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'spring.json.trusted.packages' was supplied but isn't a known config.
+2020-02-18 15:05:23.589  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-18 15:05:23.590  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-18 15:05:23.595  INFO 19656 --- [           main] org.apache.kafka.clients.Metadata        : Cluster ID: MzLMDiApTTq2lu_5789ovQ
+2020-02-18 15:05:23.597  INFO 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [RVMTDV1147.riachuelo.net:9092, RVMTDV1148.riachuelo.net:9092, RVMTDV1154.riachuelo.net:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = so60172304.1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class br.com.riachuelo.events.InvoiceDeserializer
+
+2020-02-18 15:05:23.600  WARN 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'spring.json.trusted.packages' was supplied but isn't a known config.
+2020-02-18 15:05:23.600  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-18 15:05:23.600  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-18 15:05:23.600  INFO 19656 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-02-18 15:05:23.601  INFO 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [RVMTDV1147.riachuelo.net:9092, RVMTDV1148.riachuelo.net:9092, RVMTDV1154.riachuelo.net:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orders3
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class br.com.riachuelo.events.InvoiceDeserializer
+
+2020-02-18 15:05:23.604  WARN 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'spring.json.trusted.packages' was supplied but isn't a known config.
+2020-02-18 15:05:23.604  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-18 15:05:23.604  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-18 15:05:23.611  INFO 19656 --- [           main] org.apache.kafka.clients.Metadata        : Cluster ID: MzLMDiApTTq2lu_5789ovQ
+2020-02-18 15:05:23.616  INFO 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [RVMTDV1147.riachuelo.net:9092, RVMTDV1148.riachuelo.net:9092, RVMTDV1154.riachuelo.net:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orders3
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class br.com.riachuelo.events.InvoiceDeserializer
+
+2020-02-18 15:05:23.618  WARN 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'spring.json.trusted.packages' was supplied but isn't a known config.
+2020-02-18 15:05:23.618  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-18 15:05:23.618  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-18 15:05:23.618  INFO 19656 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-02-18 15:05:23.619  INFO 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [RVMTDV1147.riachuelo.net:9092, RVMTDV1148.riachuelo.net:9092, RVMTDV1154.riachuelo.net:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orders3
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class br.com.riachuelo.events.InvoiceDeserializer
+
+2020-02-18 15:05:23.623  WARN 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'spring.json.trusted.packages' was supplied but isn't a known config.
+2020-02-18 15:05:23.623  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-18 15:05:23.623  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-18 15:05:23.676  INFO 19656 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : Cluster ID: MzLMDiApTTq2lu_5789ovQ
+2020-02-18 15:05:23.677  INFO 19656 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-6, groupId=orders3] Discovered group coordinator RVMTDV1148.riachuelo.net:9092 (id: 2147483645 rack: null)
+2020-02-18 15:05:23.678  INFO 19656 --- [           main] org.apache.kafka.clients.Metadata        : Cluster ID: MzLMDiApTTq2lu_5789ovQ
+2020-02-18 15:05:23.680  INFO 19656 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-6, groupId=orders3] Revoking previously assigned partitions []
+2020-02-18 15:05:23.680  INFO 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [RVMTDV1147.riachuelo.net:9092, RVMTDV1148.riachuelo.net:9092, RVMTDV1154.riachuelo.net:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = orders3
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class br.com.riachuelo.events.InvoiceDeserializer
+
+2020-02-18 15:05:23.681  INFO 19656 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2020-02-18 15:05:23.681 DEBUG 19656 --- [ntainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Commit list: {}
+2020-02-18 15:05:23.681  INFO 19656 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-6, groupId=orders3] (Re-)joining group
+2020-02-18 15:05:23.684  WARN 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : The configuration 'spring.json.trusted.packages' was supplied but isn't a known config.
+2020-02-18 15:05:23.685  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-18 15:05:23.685  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-18 15:05:23.685  INFO 19656 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-02-18 15:05:23.707  INFO 19656 --- [           main] br.com.riachuelo.InvoicingServiceTest    : Started InvoicingServiceTest in 9.907 seconds (JVM running for 12.014)
+2020-02-18 15:05:23.855  INFO 19656 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 10
+	auto.offset.reset = earliest
+	bootstrap.servers = [127.0.0.1:55769]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = teste9
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 60000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class br.com.riachuelo.events.InvoiceDeserializer
+
+2020-02-18 15:05:23.860  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-18 15:05:23.860  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-18 15:05:23.908  INFO 19656 --- [           main] org.apache.kafka.clients.Metadata        : Cluster ID: SdE8OHj4S4Ch7z53Jm3RNA
+2020-02-18 15:05:23.919  INFO 19656 --- [0 cport:55760):] o.a.z.server.PrepRequestProcessor        : Got user-level KeeperException when processing sessionid:0x1001919b2fc0001 type:setData cxid:0x4c zxid:0x26 txntype:-1 reqpath:n/a Error Path:/config/topics/__consumer_offsets Error:KeeperErrorCode = NoNode for /config/topics/__consumer_offsets
+2020-02-18 15:05:23.924  INFO 19656 --- [quest-handler-4] kafka.zk.AdminZkClient                   : Topic creation Map(__consumer_offsets-4 -> ArrayBuffer(0), __consumer_offsets-3 -> ArrayBuffer(0), __consumer_offsets-2 -> ArrayBuffer(0), __consumer_offsets-0 -> ArrayBuffer(0), __consumer_offsets-1 -> ArrayBuffer(0))
+2020-02-18 15:05:23.927  INFO 19656 --- [quest-handler-4] kafka.server.KafkaApis                   : [KafkaApi-0] Auto creation of topic __consumer_offsets with 5 partitions and replication factor 1 is successful
+2020-02-18 15:05:23.929  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] New topics: [Set(__consumer_offsets)], deleted topics: [Set()], new partition replica assignment [Map(__consumer_offsets-4 -> Vector(0), __consumer_offsets-3 -> Vector(0), __consumer_offsets-2 -> Vector(0), __consumer_offsets-0 -> Vector(0), __consumer_offsets-1 -> Vector(0))]
+2020-02-18 15:05:23.929  INFO 19656 --- [er-event-thread] kafka.controller.KafkaController         : [Controller id=0] New partition creation callback for __consumer_offsets-4,__consumer_offsets-3,__consumer_offsets-2,__consumer_offsets-0,__consumer_offsets-1
+2020-02-18 15:05:23.946  INFO 19656 --- [quest-handler-5] kafka.server.ReplicaFetcherManager       : [ReplicaFetcherManager on broker 0] Removed fetcher for partitions __consumer_offsets-4,__consumer_offsets-3,__consumer_offsets-2,__consumer_offsets-0,__consumer_offsets-1
+2020-02-18 15:05:23.947  INFO 19656 --- [ntainer#2-0-C-1] org.apache.kafka.clients.Metadata        : Cluster ID: MzLMDiApTTq2lu_5789ovQ
+2020-02-18 15:05:23.947  INFO 19656 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=orders3] Discovered group coordinator RVMTDV1148.riachuelo.net:9092 (id: 2147483645 rack: null)
+2020-02-18 15:05:23.947  INFO 19656 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=orders3] Revoking previously assigned partitions []
+2020-02-18 15:05:23.948  INFO 19656 --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2020-02-18 15:05:23.948 DEBUG 19656 --- [ntainer#2-0-C-1] essageListenerContainer$ListenerConsumer : Commit list: {}
+2020-02-18 15:05:23.948  INFO 19656 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=orders3] (Re-)joining group
+2020-02-18 15:05:23.958  INFO 19656 --- [quest-handler-5] kafka.log.Log                            : [Log partition=__consumer_offsets-0, dir=C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725] Loading producer state till offset 0 with message format version 2
+2020-02-18 15:05:23.960  INFO 19656 --- [quest-handler-5] kafka.log.Log                            : [Log partition=__consumer_offsets-0, dir=C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 6 ms
+2020-02-18 15:05:23.960  INFO 19656 --- [quest-handler-5] kafka.log.LogManager                     : Created log for partition __consumer_offsets-0 in C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725 with properties {compression.type -> producer, message.format.version -> 2.0-IV1, file.delete.delay.ms -> 1000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, message.downconversion.enable -> true, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> compact, flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 104857600, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}.
+2020-02-18 15:05:23.961  INFO 19656 --- [quest-handler-5] kafka.cluster.Partition                  : [Partition __consumer_offsets-0 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-0
+2020-02-18 15:05:23.961  INFO 19656 --- [quest-handler-5] kafka.cluster.Replica                    : Replica loaded for partition __consumer_offsets-0 with initial high watermark 0
+2020-02-18 15:05:23.961  INFO 19656 --- [quest-handler-5] kafka.cluster.Partition                  : [Partition __consumer_offsets-0 broker=0] __consumer_offsets-0 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1
+2020-02-18 15:05:23.975  INFO 19656 --- [quest-handler-5] kafka.log.Log                            : [Log partition=__consumer_offsets-4, dir=C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725] Loading producer state till offset 0 with message format version 2
+2020-02-18 15:05:23.977  INFO 19656 --- [quest-handler-5] kafka.log.Log                            : [Log partition=__consumer_offsets-4, dir=C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 6 ms
+2020-02-18 15:05:23.977  INFO 19656 --- [quest-handler-5] kafka.log.LogManager                     : Created log for partition __consumer_offsets-4 in C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725 with properties {compression.type -> producer, message.format.version -> 2.0-IV1, file.delete.delay.ms -> 1000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, message.downconversion.enable -> true, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> compact, flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 104857600, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}.
+2020-02-18 15:05:23.978  INFO 19656 --- [quest-handler-5] kafka.cluster.Partition                  : [Partition __consumer_offsets-4 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-4
+2020-02-18 15:05:23.978  INFO 19656 --- [quest-handler-5] kafka.cluster.Replica                    : Replica loaded for partition __consumer_offsets-4 with initial high watermark 0
+2020-02-18 15:05:23.978  INFO 19656 --- [quest-handler-5] kafka.cluster.Partition                  : [Partition __consumer_offsets-4 broker=0] __consumer_offsets-4 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1
+2020-02-18 15:05:23.993  INFO 19656 --- [quest-handler-5] kafka.log.Log                            : [Log partition=__consumer_offsets-1, dir=C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725] Loading producer state till offset 0 with message format version 2
+2020-02-18 15:05:23.994  INFO 19656 --- [quest-handler-5] kafka.log.Log                            : [Log partition=__consumer_offsets-1, dir=C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 5 ms
+2020-02-18 15:05:23.995  INFO 19656 --- [quest-handler-5] kafka.log.LogManager                     : Created log for partition __consumer_offsets-1 in C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725 with properties {compression.type -> producer, message.format.version -> 2.0-IV1, file.delete.delay.ms -> 1000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, message.downconversion.enable -> true, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> compact, flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 104857600, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}.
+2020-02-18 15:05:23.995  INFO 19656 --- [quest-handler-5] kafka.cluster.Partition                  : [Partition __consumer_offsets-1 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-1
+2020-02-18 15:05:23.995  INFO 19656 --- [quest-handler-5] kafka.cluster.Replica                    : Replica loaded for partition __consumer_offsets-1 with initial high watermark 0
+2020-02-18 15:05:23.996  INFO 19656 --- [quest-handler-5] kafka.cluster.Partition                  : [Partition __consumer_offsets-1 broker=0] __consumer_offsets-1 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1
+2020-02-18 15:05:24.016  INFO 19656 --- [quest-handler-5] kafka.log.Log                            : [Log partition=__consumer_offsets-2, dir=C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725] Loading producer state till offset 0 with message format version 2
+2020-02-18 15:05:24.018  INFO 19656 --- [quest-handler-5] kafka.log.Log                            : [Log partition=__consumer_offsets-2, dir=C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 10 ms
+2020-02-18 15:05:24.019  INFO 19656 --- [quest-handler-5] kafka.log.LogManager                     : Created log for partition __consumer_offsets-2 in C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725 with properties {compression.type -> producer, message.format.version -> 2.0-IV1, file.delete.delay.ms -> 1000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, message.downconversion.enable -> true, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> compact, flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 104857600, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}.
+2020-02-18 15:05:24.019  INFO 19656 --- [quest-handler-5] kafka.cluster.Partition                  : [Partition __consumer_offsets-2 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-2
+2020-02-18 15:05:24.019  INFO 19656 --- [quest-handler-5] kafka.cluster.Replica                    : Replica loaded for partition __consumer_offsets-2 with initial high watermark 0
+2020-02-18 15:05:24.020  INFO 19656 --- [quest-handler-5] kafka.cluster.Partition                  : [Partition __consumer_offsets-2 broker=0] __consumer_offsets-2 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1
+2020-02-18 15:05:24.037  INFO 19656 --- [quest-handler-5] kafka.log.Log                            : [Log partition=__consumer_offsets-3, dir=C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725] Loading producer state till offset 0 with message format version 2
+2020-02-18 15:05:24.039  INFO 19656 --- [quest-handler-5] kafka.log.Log                            : [Log partition=__consumer_offsets-3, dir=C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725] Completed load of log with 1 segments, log start offset 0 and log end offset 0 in 7 ms
+2020-02-18 15:05:24.039  INFO 19656 --- [quest-handler-5] kafka.log.LogManager                     : Created log for partition __consumer_offsets-3 in C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725 with properties {compression.type -> producer, message.format.version -> 2.0-IV1, file.delete.delay.ms -> 1000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, message.downconversion.enable -> true, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> false, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> compact, flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 104857600, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}.
+2020-02-18 15:05:24.040  INFO 19656 --- [quest-handler-5] kafka.cluster.Partition                  : [Partition __consumer_offsets-3 broker=0] No checkpointed highwatermark is found for partition __consumer_offsets-3
+2020-02-18 15:05:24.040  INFO 19656 --- [quest-handler-5] kafka.cluster.Replica                    : Replica loaded for partition __consumer_offsets-3 with initial high watermark 0
+2020-02-18 15:05:24.040  INFO 19656 --- [quest-handler-5] kafka.cluster.Partition                  : [Partition __consumer_offsets-3 broker=0] __consumer_offsets-3 starts at Leader Epoch 0 from offset 0. Previous Leader Epoch was: -1
+2020-02-18 15:05:24.046  INFO 19656 --- [quest-handler-5] kafka.server.ReplicaAlterLogDirsManager  : [ReplicaAlterLogDirsManager on broker 0] Added fetcher for partitions List()
+2020-02-18 15:05:24.048  INFO 19656 --- [quest-handler-5] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-3
+2020-02-18 15:05:24.049  INFO 19656 --- [quest-handler-5] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-2
+2020-02-18 15:05:24.049  INFO 19656 --- [quest-handler-5] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-1
+2020-02-18 15:05:24.049  INFO 19656 --- [quest-handler-5] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-4
+2020-02-18 15:05:24.049  INFO 19656 --- [quest-handler-5] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Scheduling loading of offsets and group metadata from __consumer_offsets-0
+2020-02-18 15:05:24.059  INFO 19656 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-3 in 10 milliseconds.
+2020-02-18 15:05:24.060  INFO 19656 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-2 in 0 milliseconds.
+2020-02-18 15:05:24.060  INFO 19656 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-1 in 0 milliseconds.
+2020-02-18 15:05:24.060  INFO 19656 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-4 in 0 milliseconds.
+2020-02-18 15:05:24.060  INFO 19656 --- [adata-manager-0] k.c.group.GroupMetadataManager           : [GroupMetadataManager brokerId=0] Finished loading offsets and group metadata from __consumer_offsets-0 in 0 milliseconds.
+2020-02-18 15:05:24.104  INFO 19656 --- [           main] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-9, groupId=teste9] Discovered group coordinator localhost:55769 (id: 2147483647 rack: null)
+2020-02-18 15:05:24.105  INFO 19656 --- [           main] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-9, groupId=teste9] Revoking previously assigned partitions []
+2020-02-18 15:05:24.105  INFO 19656 --- [           main] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-9, groupId=teste9] (Re-)joining group
+2020-02-18 15:05:24.119  INFO 19656 --- [quest-handler-6] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Preparing to rebalance group teste9 with old generation 0 (__consumer_offsets-0)
+2020-02-18 15:05:24.127  INFO 19656 --- [cutor-Rebalance] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Stabilized group teste9 generation 1 (__consumer_offsets-0)
+2020-02-18 15:05:24.136  INFO 19656 --- [quest-handler-1] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Assignment received from leader for group teste9 for generation 1
+2020-02-18 15:05:24.184  INFO 19656 --- [           main] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-9, groupId=teste9] Successfully joined group with generation 1
+2020-02-18 15:05:24.185  INFO 19656 --- [           main] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-9, groupId=teste9] Setting newly assigned partitions [tp-in-gco-mao-notasfiscais-0]
+2020-02-18 15:05:24.186 DEBUG 19656 --- [           main] o.s.kafka.test.EmbeddedKafkaBroker       : partitions assigned: [tp-in-gco-mao-notasfiscais-0]
+2020-02-18 15:05:24.200  INFO 19656 --- [           main] o.a.k.c.consumer.internals.Fetcher       : [Consumer clientId=consumer-9, groupId=teste9] Resetting offset for partition tp-in-gco-mao-notasfiscais-0 to offset 0.
+2020-02-18 15:05:24.228 DEBUG 19656 --- [           main] o.s.kafka.test.EmbeddedKafkaBroker       : Subscription Initiated
+2020-02-18 15:05:24.234  INFO 19656 --- [           main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [RVMTDV1147.riachuelo.net:9092, RVMTDV1148.riachuelo.net:9092, RVMTDV1154.riachuelo.net:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2020-02-18 15:05:24.251  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2020-02-18 15:05:24.251  INFO 19656 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2020-02-18 15:05:24.312  INFO 19656 --- [ad | producer-1] org.apache.kafka.clients.Metadata        : Cluster ID: MzLMDiApTTq2lu_5789ovQ
+2020-02-18 15:05:24.597  WARN 19656 --- [ntainer#2-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-2, groupId=orders3] Connection to node -1 could not be established. Broker may not be available.
+2020-02-18 15:05:24.609  WARN 19656 --- [0172304.1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-4, groupId=so60172304.1] Connection to node -1 could not be established. Broker may not be available.
+2020-02-18 15:05:24.619  INFO 19656 --- [0172304.1-0-C-1] org.apache.kafka.clients.Metadata        : Cluster ID: MzLMDiApTTq2lu_5789ovQ
+2020-02-18 15:05:24.626  INFO 19656 --- [0172304.1-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-4, groupId=so60172304.1] Discovered group coordinator RVMTDV1148.riachuelo.net:9092 (id: 2147483645 rack: null)
+2020-02-18 15:05:24.626  WARN 19656 --- [ntainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-6, groupId=orders3] Connection to node -1 could not be established. Broker may not be available.
+2020-02-18 15:05:24.627  INFO 19656 --- [0172304.1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-4, groupId=so60172304.1] Revoking previously assigned partitions []
+2020-02-18 15:05:24.627  INFO 19656 --- [0172304.1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2020-02-18 15:05:24.628 DEBUG 19656 --- [0172304.1-0-C-1] essageListenerContainer$ListenerConsumer : Commit list: {}
+2020-02-18 15:05:24.628  INFO 19656 --- [0172304.1-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-4, groupId=so60172304.1] (Re-)joining group
+2020-02-18 15:05:24.693  WARN 19656 --- [ntainer#1-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-8, groupId=orders3] Connection to node -1 could not be established. Broker may not be available.
+2020-02-18 15:05:24.699  INFO 19656 --- [ntainer#1-0-C-1] org.apache.kafka.clients.Metadata        : Cluster ID: MzLMDiApTTq2lu_5789ovQ
+2020-02-18 15:05:24.704  INFO 19656 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-8, groupId=orders3] Discovered group coordinator RVMTDV1148.riachuelo.net:9092 (id: 2147483645 rack: null)
+2020-02-18 15:05:24.705  INFO 19656 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-8, groupId=orders3] Revoking previously assigned partitions []
+2020-02-18 15:05:24.705  INFO 19656 --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2020-02-18 15:05:24.705 DEBUG 19656 --- [ntainer#1-0-C-1] essageListenerContainer$ListenerConsumer : Commit list: {}
+2020-02-18 15:05:24.705  INFO 19656 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-8, groupId=orders3] (Re-)joining group
+2020-02-18 15:05:25.261  WARN 19656 --- [ad | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2020-02-18 15:05:26.699  INFO 19656 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-6, groupId=orders3] Successfully joined group with generation 1116
+2020-02-18 15:05:26.699  INFO 19656 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=orders3] Successfully joined group with generation 1116
+2020-02-18 15:05:26.699  INFO 19656 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-8, groupId=orders3] Successfully joined group with generation 1116
+2020-02-18 15:05:26.700  INFO 19656 --- [ntainer#2-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=orders3] Setting newly assigned partitions [tp-err-gco-mao-notasfiscais-0]
+2020-02-18 15:05:26.700  INFO 19656 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-6, groupId=orders3] Setting newly assigned partitions [tp-out-gco-mao-notasfiscais-0]
+2020-02-18 15:05:26.700  INFO 19656 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-8, groupId=orders3] Setting newly assigned partitions [tp-ret-gco-mao-notasfiscais-0]
+2020-02-18 15:05:26.706  INFO 19656 --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [tp-ret-gco-mao-notasfiscais-0]
+2020-02-18 15:05:26.706  INFO 19656 --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [tp-err-gco-mao-notasfiscais-0]
+2020-02-18 15:05:26.706  INFO 19656 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [tp-out-gco-mao-notasfiscais-0]
+2020-02-18 15:05:27.640  INFO 19656 --- [0172304.1-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-4, groupId=so60172304.1] Successfully joined group with generation 85
+2020-02-18 15:05:27.641  INFO 19656 --- [0172304.1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-4, groupId=so60172304.1] Setting newly assigned partitions [tp-in-gco-mao-notasfiscais-0]
+2020-02-18 15:05:27.642  INFO 19656 --- [0172304.1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [tp-in-gco-mao-notasfiscais-0]
+2020-02-18 15:05:27.720 DEBUG 19656 --- [0172304.1-0-C-1] essageListenerContainer$ListenerConsumer : Received: 1 records
+2020-02-18 15:05:27.725 DEBUG 19656 --- [0172304.1-0-C-1] .a.RecordMessagingMessageListenerAdapter : Processing [GenericMessage [payload=br.com.riachuelo.ws.ZfifNfMao@40878912, headers={kafka_offset=202, kafka_consumer=org.apache.kafka.clients.consumer.KafkaConsumer@2553fc80, kafka_timestampType=CREATE_TIME, kafka_receivedMessageKey=null, kafka_receivedPartitionId=0, kafka_receivedTopic=tp-in-gco-mao-notasfiscais, kafka_receivedTimestamp=1582049124333, __TypeId__=[B@7c1efd09}]]
+2020-02-18 15:05:27.727  INFO 19656 --- [0172304.1-0-C-1] br.com.riachuelo.events.NFKafkaListener  : Received invoice 1
+2020-02-18 15:05:28.585 DEBUG 19656 --- [ntainer#2-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:28.620 DEBUG 19656 --- [ntainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:28.689 DEBUG 19656 --- [ntainer#1-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:32.737 DEBUG 19656 --- [0172304.1-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:33.586 DEBUG 19656 --- [ntainer#2-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:33.621 DEBUG 19656 --- [ntainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:33.690 DEBUG 19656 --- [ntainer#1-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:37.738 DEBUG 19656 --- [0172304.1-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:38.588 DEBUG 19656 --- [ntainer#2-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:38.621 DEBUG 19656 --- [ntainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:38.690 DEBUG 19656 --- [ntainer#1-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:42.741 DEBUG 19656 --- [0172304.1-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:43.590 DEBUG 19656 --- [ntainer#2-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:43.622 DEBUG 19656 --- [ntainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:43.690 DEBUG 19656 --- [ntainer#1-0-C-1] essageListenerContainer$ListenerConsumer : Received: 0 records
+2020-02-18 15:05:44.387 DEBUG 19656 --- [ntainer#1-0-C-1] essageListenerContainer$ListenerConsumer : Commit list: {}
+2020-02-18 15:05:44.387 DEBUG 19656 --- [ntainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Commit list: {}
+2020-02-18 15:05:44.387 DEBUG 19656 --- [0172304.1-0-C-1] essageListenerContainer$ListenerConsumer : Commit list: {}
+2020-02-18 15:05:44.387 DEBUG 19656 --- [ntainer#2-0-C-1] essageListenerContainer$ListenerConsumer : Commit list: {}
+2020-02-18 15:05:44.389  INFO 19656 --- [0172304.1-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-02-18 15:05:44.389  INFO 19656 --- [ntainer#2-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-02-18 15:05:44.389  INFO 19656 --- [ntainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-02-18 15:05:44.389  INFO 19656 --- [ntainer#1-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-02-18 15:05:44.397 ERROR 19656 --- [       Thread-5] org.apache.kafka.test.TestUtils          : Error deleting C:\Users\4002111\AppData\Local\Temp\kafka-8417124474725217090
+
+java.nio.file.FileSystemException: C:\Users\4002111\AppData\Local\Temp\kafka-8417124474725217090\version-2\log.1: O arquivo já está sendo usado por outro processo.
+
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:86)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at org.apache.kafka.common.utils.Utils$2.visitFile(Utils.java:734)
+	at org.apache.kafka.common.utils.Utils$2.visitFile(Utils.java:723)
+	at java.nio.file.Files.walkFileTree(Files.java:2670)
+	at java.nio.file.Files.walkFileTree(Files.java:2742)
+	at org.apache.kafka.common.utils.Utils.delete(Utils.java:723)
+	at org.apache.kafka.test.TestUtils$1.run(TestUtils.java:184)
+
+2020-02-18 15:05:44.397 ERROR 19656 --- [       Thread-8] org.apache.kafka.test.TestUtils          : Error deleting C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725
+
+java.nio.file.FileSystemException: C:\Users\4002111\AppData\Local\Temp\kafka-1290496382696303725\.lock: O arquivo já está sendo usado por outro processo.
+
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:86)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:103)
+	at java.nio.file.Files.delete(Files.java:1126)
+	at org.apache.kafka.common.utils.Utils$2.visitFile(Utils.java:734)
+	at org.apache.kafka.common.utils.Utils$2.visitFile(Utils.java:723)
+	at java.nio.file.Files.walkFileTree(Files.java:2670)
+	at java.nio.file.Files.walkFileTree(Files.java:2742)
+	at org.apache.kafka.common.utils.Utils.delete(Utils.java:723)
+	at org.apache.kafka.test.TestUtils$1.run(TestUtils.java:184)
+
+2020-02-18 15:05:44.403  INFO 19656 --- [ntainer#1-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2020-02-18 15:05:44.403 DEBUG 19656 --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : KafkaMessageListenerContainer [id=org.springframework.kafka.KafkaListenerEndpointContainer#1-0, clientIndex=-0, topicPartitions=[tp-ret-gco-mao-notasfiscais-0]] stopped normally
+2020-02-18 15:05:44.405  INFO 19656 --- [ntainer#2-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2020-02-18 15:05:44.405  INFO 19656 --- [ntainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2020-02-18 15:05:44.405 DEBUG 19656 --- [ntainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : KafkaMessageListenerContainer [id=org.springframework.kafka.KafkaListenerEndpointContainer#2-0, clientIndex=-0, topicPartitions=[tp-err-gco-mao-notasfiscais-0]] stopped normally
+2020-02-18 15:05:44.405 DEBUG 19656 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : KafkaMessageListenerContainer [id=org.springframework.kafka.KafkaListenerEndpointContainer#0-0, clientIndex=-0, topicPartitions=[tp-out-gco-mao-notasfiscais-0]] stopped normally
+2020-02-18 15:05:44.405  INFO 19656 --- [0172304.1-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2020-02-18 15:05:44.405 DEBUG 19656 --- [0172304.1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : KafkaMessageListenerContainer [id=so60172304.1-0, clientIndex=-0, topicPartitions=[tp-in-gco-mao-notasfiscais-0]] stopped normally
+2020-02-18 15:05:44.407  INFO 19656 --- [      Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-18 15:05:44.409  INFO 19656 --- [      Thread-11] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2020-02-18 15:05:44.413  INFO 19656 --- [      Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-18 15:05:44.415  INFO 19656 --- [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-18 15:05:44.422  INFO 19656 --- [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-18 15:05:44.424  INFO 19656 --- [      Thread-11] kafka.server.KafkaServer                 : [KafkaServer id=0] shutting down
+2020-02-18 15:05:44.427  INFO 19656 --- [      Thread-11] icationListener$ChangeEventProcessThread : [/config/changes-event-process-thread]: Shutting down
+2020-02-18 15:05:44.428  INFO 19656 --- [-process-thread] icationListener$ChangeEventProcessThread : [/config/changes-event-process-thread]: Stopped
+2020-02-18 15:05:44.428  INFO 19656 --- [      Thread-11] icationListener$ChangeEventProcessThread : [/config/changes-event-process-thread]: Shutdown completed
+2020-02-18 15:05:44.429  INFO 19656 --- [      Thread-11] kafka.network.SocketServer               : [SocketServer brokerId=0] Stopping socket server request processors
+2020-02-18 15:05:44.442  INFO 19656 --- [      Thread-11] kafka.network.SocketServer               : [SocketServer brokerId=0] Stopped socket server request processors
+2020-02-18 15:05:44.443  INFO 19656 --- [      Thread-11] kafka.server.KafkaRequestHandlerPool     : [Kafka Request Handler on Broker 0], shutting down
+2020-02-18 15:05:44.446  INFO 19656 --- [      Thread-11] kafka.server.KafkaRequestHandlerPool     : [Kafka Request Handler on Broker 0], shut down completely
+2020-02-18 15:05:44.450  INFO 19656 --- [      Thread-11] kafka.server.KafkaApis                   : [KafkaApi-0] Shutdown complete.
+2020-02-18 15:05:44.452  INFO 19656 --- [      Thread-11] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-topic]: Shutting down
+2020-02-18 15:05:44.540  INFO 19656 --- [thread | teste9] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-9, groupId=teste9] Error sending fetch request (sessionId=1501656045, epoch=39) to node 0: org.apache.kafka.common.errors.DisconnectException.
+2020-02-18 15:05:44.541  INFO 19656 --- [nReaper-0-topic] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-topic]: Stopped
+2020-02-18 15:05:44.541  INFO 19656 --- [      Thread-11] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-topic]: Shutdown completed
+2020-02-18 15:05:44.541  INFO 19656 --- [thread | teste9] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-9, groupId=teste9] Group coordinator localhost:55769 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-02-18 15:05:44.544  INFO 19656 --- [      Thread-11] k.c.transaction.TransactionCoordinator   : [TransactionCoordinator id=0] Shutting down.
+2020-02-18 15:05:44.545  INFO 19656 --- [      Thread-11] k.c.transaction.ProducerIdManager        : [ProducerId Manager 0]: Shutdown complete: last producerId assigned 0
+2020-02-18 15:05:44.546  INFO 19656 --- [      Thread-11] k.c.transaction.TransactionStateManager  : [Transaction State Manager 0]: Shutdown complete
+2020-02-18 15:05:44.546  INFO 19656 --- [      Thread-11] k.c.t.TransactionMarkerChannelManager    : [Transaction Marker Channel Manager 0]: Shutting down
+2020-02-18 15:05:44.547  INFO 19656 --- [      Thread-11] k.c.t.TransactionMarkerChannelManager    : [Transaction Marker Channel Manager 0]: Shutdown completed
+2020-02-18 15:05:44.547  INFO 19656 --- [rSenderThread-0] k.c.t.TransactionMarkerChannelManager    : [Transaction Marker Channel Manager 0]: Stopped
+2020-02-18 15:05:44.548  INFO 19656 --- [      Thread-11] k.c.transaction.TransactionCoordinator   : [TransactionCoordinator id=0] Shutdown complete.
+2020-02-18 15:05:44.549  INFO 19656 --- [      Thread-11] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Shutting down.
+2020-02-18 15:05:44.549  INFO 19656 --- [      Thread-11] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Heartbeat]: Shutting down
+2020-02-18 15:05:44.744  INFO 19656 --- [per-0-Heartbeat] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Heartbeat]: Stopped
+2020-02-18 15:05:44.744  INFO 19656 --- [      Thread-11] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Heartbeat]: Shutdown completed
+2020-02-18 15:05:44.744  INFO 19656 --- [      Thread-11] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Rebalance]: Shutting down
+2020-02-18 15:05:44.776  INFO 19656 --- [      Thread-11] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Rebalance]: Shutdown completed
+2020-02-18 15:05:44.776  INFO 19656 --- [per-0-Rebalance] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Rebalance]: Stopped
+2020-02-18 15:05:44.777  INFO 19656 --- [      Thread-11] k.coordinator.group.GroupCoordinator     : [GroupCoordinator 0]: Shutdown complete.
+2020-02-18 15:05:44.778  INFO 19656 --- [      Thread-11] kafka.server.ReplicaManager              : [ReplicaManager broker=0] Shutting down
+2020-02-18 15:05:44.778  INFO 19656 --- [      Thread-11] k.s.ReplicaManager$LogDirFailureHandler  : [LogDirFailureHandler]: Shutting down
+2020-02-18 15:05:44.778  INFO 19656 --- [rFailureHandler] k.s.ReplicaManager$LogDirFailureHandler  : [LogDirFailureHandler]: Stopped
+2020-02-18 15:05:44.778  INFO 19656 --- [      Thread-11] k.s.ReplicaManager$LogDirFailureHandler  : [LogDirFailureHandler]: Shutdown completed
+2020-02-18 15:05:44.779  INFO 19656 --- [      Thread-11] kafka.server.ReplicaFetcherManager       : [ReplicaFetcherManager on broker 0] shutting down
+2020-02-18 15:05:44.781  INFO 19656 --- [      Thread-11] kafka.server.ReplicaFetcherManager       : [ReplicaFetcherManager on broker 0] shutdown completed
+2020-02-18 15:05:44.781  INFO 19656 --- [      Thread-11] kafka.server.ReplicaAlterLogDirsManager  : [ReplicaAlterLogDirsManager on broker 0] shutting down
+2020-02-18 15:05:44.781  INFO 19656 --- [      Thread-11] kafka.server.ReplicaAlterLogDirsManager  : [ReplicaAlterLogDirsManager on broker 0] shutdown completed
+2020-02-18 15:05:44.782  INFO 19656 --- [      Thread-11] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Fetch]: Shutting down
+2020-02-18 15:05:44.934  INFO 19656 --- [      Thread-11] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Fetch]: Shutdown completed
+2020-02-18 15:05:44.934  INFO 19656 --- [nReaper-0-Fetch] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Fetch]: Stopped
+2020-02-18 15:05:44.934  INFO 19656 --- [      Thread-11] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Produce]: Shutting down
+2020-02-18 15:05:45.117  INFO 19656 --- [eaper-0-Produce] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Produce]: Stopped
+2020-02-18 15:05:45.117  INFO 19656 --- [      Thread-11] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-Produce]: Shutdown completed
+2020-02-18 15:05:45.117  INFO 19656 --- [      Thread-11] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-DeleteRecords]: Shutting down
+2020-02-18 15:05:45.308  INFO 19656 --- [      Thread-11] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-DeleteRecords]: Shutdown completed
+2020-02-18 15:05:45.308  INFO 19656 --- [0-DeleteRecords] perationPurgatory$ExpiredOperationReaper : [ExpirationReaper-0-DeleteRecords]: Stopped
+2020-02-18 15:05:45.315  INFO 19656 --- [      Thread-11] kafka.server.ReplicaManager              : [ReplicaManager broker=0] Shut down completely
+2020-02-18 15:05:45.316  INFO 19656 --- [      Thread-11] kafka.log.LogManager                     : Shutting down.
+2020-02-18 15:05:45.318  INFO 19656 --- [      Thread-11] kafka.log.LogCleaner                     : Shutting down the log cleaner.
+2020-02-18 15:05:45.319  INFO 19656 --- [      Thread-11] kafka.log.LogCleaner                     : [kafka-log-cleaner-thread-0]: Shutting down
+2020-02-18 15:05:45.320  INFO 19656 --- [leaner-thread-0] kafka.log.LogCleaner                     : [kafka-log-cleaner-thread-0]: Stopped
+2020-02-18 15:05:45.320  INFO 19656 --- [      Thread-11] kafka.log.LogCleaner                     : [kafka-log-cleaner-thread-0]: Shutdown completed
+2020-02-18 15:05:45.366  INFO 19656 --- [pool-8-thread-1] kafka.log.ProducerStateManager           : [ProducerStateManager partition=__consumer_offsets-0] Writing producer snapshot at offset 1
+2020-02-18 15:05:45.402  INFO 19656 --- [      Thread-11] kafka.log.LogManager                     : Shutdown complete.
+2020-02-18 15:05:45.403  INFO 19656 --- [er-event-thread] rollerEventManager$ControllerEventThread : [ControllerEventThread controllerId=0] Shutting down
+2020-02-18 15:05:45.403  INFO 19656 --- [er-event-thread] rollerEventManager$ControllerEventThread : [ControllerEventThread controllerId=0] Stopped
+2020-02-18 15:05:45.403  INFO 19656 --- [      Thread-11] rollerEventManager$ControllerEventThread : [ControllerEventThread controllerId=0] Shutdown completed
+2020-02-18 15:05:45.406  INFO 19656 --- [      Thread-11] kafka.controller.PartitionStateMachine   : [PartitionStateMachine controllerId=0] Stopped partition state machine
+2020-02-18 15:05:45.408  INFO 19656 --- [      Thread-11] kafka.controller.ReplicaStateMachine     : [ReplicaStateMachine controllerId=0] Stopped replica state machine
+2020-02-18 15:05:45.409  INFO 19656 --- [      Thread-11] kafka.controller.RequestSendThread       : [RequestSendThread controllerId=0] Shutting down
+2020-02-18 15:05:45.409  INFO 19656 --- [r-0-send-thread] kafka.controller.RequestSendThread       : [RequestSendThread controllerId=0] Stopped
+2020-02-18 15:05:45.409  INFO 19656 --- [      Thread-11] kafka.controller.RequestSendThread       : [RequestSendThread controllerId=0] Shutdown completed
+2020-02-18 15:05:45.411  INFO 19656 --- [      Thread-11] kafka.controller.KafkaController         : [Controller id=0] Resigned
+2020-02-18 15:05:45.412  INFO 19656 --- [      Thread-11] kafka.zookeeper.ZooKeeperClient          : [ZooKeeperClient] Closing.
+2020-02-18 15:05:45.414  INFO 19656 --- [0 cport:55760):] o.a.z.server.PrepRequestProcessor        : Processed session termination for sessionid: 0x1001919b2fc0001
+2020-02-18 15:05:45.416  INFO 19656 --- [      Thread-11] org.apache.zookeeper.ZooKeeper           : Session: 0x1001919b2fc0001 closed
+2020-02-18 15:05:45.416  INFO 19656 --- [ain-EventThread] org.apache.zookeeper.ClientCnxn          : EventThread shut down for session: 0x1001919b2fc0001
+2020-02-18 15:05:45.416  INFO 19656 --- [ry:/127.0.0.1:0] o.apache.zookeeper.server.NIOServerCnxn  : Closed socket connection for client /127.0.0.1:55766 which had sessionid 0x1001919b2fc0001
+2020-02-18 15:05:45.418  INFO 19656 --- [      Thread-11] kafka.zookeeper.ZooKeeperClient          : [ZooKeeperClient] Closed.
+2020-02-18 15:05:45.418  INFO 19656 --- [      Thread-11] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-Fetch]: Shutting down
+2020-02-18 15:05:45.650  WARN 19656 --- [thread | teste9] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=teste9] Connection to node 0 could not be established. Broker may not be available.
+2020-02-18 15:05:46.203  INFO 19656 --- [nelReaper-Fetch] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-Fetch]: Stopped
+2020-02-18 15:05:46.203  INFO 19656 --- [      Thread-11] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-Fetch]: Shutdown completed
+2020-02-18 15:05:46.203  INFO 19656 --- [      Thread-11] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-Produce]: Shutting down
+2020-02-18 15:05:46.757  WARN 19656 --- [thread | teste9] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=teste9] Connection to node 0 could not be established. Broker may not be available.
+2020-02-18 15:05:47.204  INFO 19656 --- [lReaper-Produce] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-Produce]: Stopped
+2020-02-18 15:05:47.204  INFO 19656 --- [      Thread-11] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-Produce]: Shutdown completed
+2020-02-18 15:05:47.205  INFO 19656 --- [      Thread-11] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-Request]: Shutting down
+2020-02-18 15:05:47.206  INFO 19656 --- [lReaper-Request] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-Request]: Stopped
+2020-02-18 15:05:47.206  INFO 19656 --- [      Thread-11] lientQuotaManager$ThrottledChannelReaper : [ThrottledChannelReaper-Request]: Shutdown completed
+2020-02-18 15:05:47.209  INFO 19656 --- [      Thread-11] kafka.network.SocketServer               : [SocketServer brokerId=0] Shutting down socket server
+2020-02-18 15:05:47.226  INFO 19656 --- [      Thread-11] kafka.network.SocketServer               : [SocketServer brokerId=0] Shutdown completed
+2020-02-18 15:05:47.229  INFO 19656 --- [      Thread-11] kafka.server.KafkaServer                 : [KafkaServer id=0] shut down completed
+2020-02-18 15:05:47.237  INFO 19656 --- [127.0.0.1:55760] org.I0Itec.zkclient.ZkEventThread        : Terminate ZkClient event thread.
+2020-02-18 15:05:47.238  INFO 19656 --- [0 cport:55760):] o.a.z.server.PrepRequestProcessor        : Processed session termination for sessionid: 0x1001919b2fc0000
+2020-02-18 15:05:47.242  INFO 19656 --- [      Thread-11] org.apache.zookeeper.ZooKeeper           : Session: 0x1001919b2fc0000 closed
+2020-02-18 15:05:47.242  INFO 19656 --- [ain-EventThread] org.apache.zookeeper.ClientCnxn          : EventThread shut down for session: 0x1001919b2fc0000
+2020-02-18 15:05:47.242  INFO 19656 --- [ry:/127.0.0.1:0] o.apache.zookeeper.server.NIOServerCnxn  : Closed socket connection for client /127.0.0.1:55763 which had sessionid 0x1001919b2fc0000
+2020-02-18 15:05:47.243  INFO 19656 --- [      Thread-11] o.a.zookeeper.server.ZooKeeperServer     : shutting down
+2020-02-18 15:05:47.243  INFO 19656 --- [      Thread-11] o.a.zookeeper.server.SessionTrackerImpl  : Shutting down
+2020-02-18 15:05:47.243  INFO 19656 --- [      Thread-11] o.a.z.server.PrepRequestProcessor        : Shutting down
+2020-02-18 15:05:47.243  INFO 19656 --- [      Thread-11] o.a.z.server.SyncRequestProcessor        : Shutting down
+2020-02-18 15:05:47.243  INFO 19656 --- [0 cport:55760):] o.a.z.server.PrepRequestProcessor        : PrepRequestProcessor exited loop!
+2020-02-18 15:05:47.243  INFO 19656 --- [   SyncThread:0] o.a.z.server.SyncRequestProcessor        : SyncRequestProcessor exited!
+2020-02-18 15:05:47.243  INFO 19656 --- [      Thread-11] o.a.z.server.FinalRequestProcessor       : shutdown of request processor complete
+2020-02-18 15:05:47.248  INFO 19656 --- [ry:/127.0.0.1:0] o.a.z.server.NIOServerCnxnFactory        : NIOServerCnxn factory exited run method
+2020-02-18 15:05:47.501  INFO 19656 --- [ SessionTracker] o.a.zookeeper.server.SessionTrackerImpl  : SessionTrackerImpl exited loop!
+2020-02-18 15:05:47.964  WARN 19656 --- [thread | teste9] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-9, groupId=teste9] Connection to node 0 could not be established. Broker may not be available.
